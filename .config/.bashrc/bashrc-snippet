@@ -1,0 +1,6 @@
+## Command to be inserted in the ~/.bashrc
+
+# Custom Configs to ~/.bashrc
+for file in ~/.config/.bashrc/*.sh; do
+    [ -r "$file" ] && source "$file"
+done
